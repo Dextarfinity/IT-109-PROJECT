@@ -2,61 +2,39 @@
     <div class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
     <!--Nav-->
     <nav id="header" class="fixed w-full z-30 top-0 text-white">
-      <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2 lg:px-8 xl:px-8">
-        <div class="pl-4 flex items-center">
-        <img src="./images/IconProject.png" alt="" class="w-10">
-          <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
-            <!--Icon from: http://www.potlabicons.com/ -->
-            Hatid KITA
-          </a>
-        </div>
-        <div class="block lg:hidden pr-4">
-          <button id="nav-toggle" class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-            <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <title>Menu</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-            </svg>
-          </button>
-        </div>
-        <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
-          <ul class="list-reset lg:flex justify-end flex-1 items-center">
-            <li class="mr-3">
-              <a class="inline-block py-2 px-4 text-black font-bold no-underline" href="#">Active</a>
-            </li>
-            <li class="mr-3">
-              <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">link</a>
-            </li>
-            <li class="mr-3">
-              <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">link</a>
-            </li>
-          </ul>
-          <button
-            id="navAction"
-            class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
-          >
-            Action
-          </button>
-        </div>
-      </div>
-    </nav>
+  <div class="w-full container mx-auto flex flex-wrap items-center justify-between py-2 lg:px-8 xl:px-8">
+    <div class="flex items-center pl-4 mt-4">
+      <img src="./images/IconProject.png" alt="" class="w-10">
+      <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl ml-2">
+        Hatid KITA
+      </a>
+    </div>
+    <div class="flex items-center pr-4">
+      <button
+        id="navAction"
+        class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+      >
+        Get Started
+      </button>
+    </div>
+  </div>
+</nav>
+
     <!--Hero-->
     <div class="pt-24">
       <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
         <!--Left Col-->
-        <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-          <h1 class="my-4 text-5xl font-bold leading-tight">
-            Main Hero Message to sell yourself!
+        <div class="flex flex-col w-full md:w-3/5 justify-center items-start text-center md:text-left px-12">
+          <h1 class="my-20 text-3xl font-bold leading-none md:text-5xl lg:text-5xl xl:text-5xl">
+            Hirap ka bang makasakay? Baka late ka na sa next subject mo?
           </h1>
-          <p class="leading-normal text-2xl mb-8">
-            Sub-hero message, not too long and not too short. Make it just right!
+          <p class="leading-normal text-1xl mb-18 md:text-2xl lg:text-2xl xl:text-2xl">
+            With Hatid KITA, solve ang transporatation mo! Hatid KITA will help you be on time!
           </p>
-          <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-            Subscribe
-          </button>
         </div>
         <!--Right Col-->
-        <div class="w-full md:w-3/5 py-6 text-center">
-          <img class="w-full md:w-4/5 z-50" src=".\images\loadingscreen.gif" />
+        <div class="w-full md:w-2/5 py-6 text-center mb-8">
+          <img class="w-full md:w-5/5 z-50" src=".\images\loadingscreen.gif" />
         </div>
       </div>
     </div>
