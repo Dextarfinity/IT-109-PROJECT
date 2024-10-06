@@ -247,7 +247,7 @@
                 class="mt-6"
               >
                 <img
-                  src="./images/Resume ID.jpg"
+                  src="./images/card/P1.jpg"
                   alt=""
                   style="border-radius: 50%; width: 50%"
                 />
@@ -382,7 +382,7 @@
                 class="mt-6"
               >
                 <img
-                  src="./images/mingming.jpg"
+                  src="./images/card/P2.jpg"
                   alt=""
                   style="border-radius: 50%; width: 50%"
                 />
@@ -515,7 +515,7 @@
                 class="mt-6"
               >
                 <img
-                  src="./images/morccc.jpg"
+                  src="./images/card/P3.jpg"
                   alt=""
                   style="border-radius: 50%; width: 50%"
                 />
