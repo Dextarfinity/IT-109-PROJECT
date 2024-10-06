@@ -43,11 +43,9 @@
           >
             Hirap ka bang makasakay? Baka late ka na sa next subject mo?
           </h1>
-          <p
-            class="leading-normal text-1xl mb-18 md:text-2xl lg:text-2xl xl:text-2xl"
-          >
-            With Hatid KITA, solve ang transporatation mo! Hatid KITA will help
-            you be on time!
+          <p class="leading-normal text-1xl mb-18 md:text-2xl lg:text-2xl xl:text-2xl">
+            With Hatid KITA, solve ang transporatation mo! Hatid KITA will help you be on
+            time!
           </p>
         </div>
         <!--Right Col-->
@@ -115,9 +113,9 @@
               User Interface
             </h3>
             <p class="text-gray-600 mb-2">
-              Quick prototype of Hatid KITA providing and offering an intuitive,
-              smooth, and user-friendly experience, with a balance of visual
-              clarity and real-time data display, and always on-the-go.
+              Quick prototype of Hatid KITA providing and offering an intuitive, smooth,
+              and user-friendly experience, with a balance of visual clarity and real-time
+              data display, and always on-the-go.
             </p>
 
             <!-- Second Row: Additional Description -->
@@ -126,9 +124,9 @@
                 App Services
               </h3>
               <p class="text-gray-600 mb-2">
-                Hatid KITA offers on-time reliable transportation, allowing
-                users to monitor vehicle locations and routes seamlessly,
-                ensuring timely and convenient rides.
+                Hatid KITA offers on-time reliable transportation, allowing users to
+                monitor vehicle locations and routes seamlessly, ensuring timely and
+                convenient rides.
               </p>
             </div>
           </div>
@@ -152,56 +150,42 @@
                   <a href="#carousel__slide1" class="carousel__prev"
                     >Go to previous slide</a
                   >
-                  <a href="#carousel__slide3" class="carousel__next"
-                    >Go to next slide</a
-                  >
+                  <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
                 </li>
                 <li id="carousel__slide3" tabindex="0" class="carousel__slide">
                   <div class="carousel__snapper"></div>
                   <a href="#carousel__slide2" class="carousel__prev"
                     >Go to previous slide</a
                   >
-                  <a href="#carousel__slide4" class="carousel__next"
-                    >Go to next slide</a
-                  >
+                  <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
                 </li>
                 <li id="carousel__slide4" tabindex="0" class="carousel__slide">
                   <div class="carousel__snapper"></div>
                   <a href="#carousel__slide3" class="carousel__prev"
                     >Go to previous slide</a
                   >
-                  <a href="#carousel__slide1" class="carousel__next"
-                    >Go to first slide</a
-                  >
+                  <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
                 </li>
               </ol>
               <aside class="carousel__navigation">
                 <ol class="carousel__navigation-list">
                   <li class="carousel__navigation-item">
-                    <a
-                      href="#carousel__slide1"
-                      class="carousel__navigation-button"
+                    <a href="#carousel__slide1" class="carousel__navigation-button"
                       >Go to slide 1</a
                     >
                   </li>
                   <li class="carousel__navigation-item">
-                    <a
-                      href="#carousel__slide2"
-                      class="carousel__navigation-button"
+                    <a href="#carousel__slide2" class="carousel__navigation-button"
                       >Go to slide 2</a
                     >
                   </li>
                   <li class="carousel__navigation-item">
-                    <a
-                      href="#carousel__slide3"
-                      class="carousel__navigation-button"
+                    <a href="#carousel__slide3" class="carousel__navigation-button"
                       >Go to slide 3</a
                     >
                   </li>
                   <li class="carousel__navigation-item">
-                    <a
-                      href="#carousel__slide4"
-                      class="carousel__navigation-button"
+                    <a href="#carousel__slide4" class="carousel__navigation-button"
                       >Go to slide 4</a
                     >
                   </li>
@@ -221,29 +205,19 @@
           About Us
         </h2>
         <div class="w-full mb-4">
-          <div
-            class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"
-          ></div>
+          <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
         </div>
-        <div
-          class="flex flex-col sm:flex-row justify-center pt-12 my-12 sm:my-4"
-        >
+        <div class="flex flex-col sm:flex-row justify-center pt-12 my-12 sm:my-4">
           <div
             class="flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4"
           >
             <div
               class="flex-1 bg-white text-gray-600 rounded-t rounded-b-none overflow-hidden shadow"
             >
-              <div class="p-8 text-2xl font-bold text-center">
-                Glomer Celestino
-              </div>
+              <div class="p-8 text-2xl font-bold text-center">Glomer Celestino</div>
               <div class="h-1 w-full gradient my-0 py-0 rounded-t"></div>
               <div
-                style="
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                "
+                style="display: flex; justify-content: center; align-items: center"
                 class="mt-6"
               >
                 <img
@@ -256,9 +230,7 @@
             <div
               class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6"
             >
-              <div
-                class="w-full pt-6 text-1xl text-gray-600 font-bold text-center"
-              >
+              <div class="w-full pt-6 text-1xl text-gray-600 font-bold text-center">
                 BSIT Student, Junior Developer, Full Stack Developer
               </div>
               <div class="flex items-center justify-center">
@@ -366,19 +338,13 @@
           <div
             class="flex flex-col w-5/6 lg:w-1/3 mx-auto lg:mx-0 rounded-lg bg-white mt-4 sm:-mt-6 shadow-lg z-10"
           >
-            <div
-              class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow"
-            >
+            <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
               <div class="w-full p-8 text-2xl font-bold text-center">
                 Mark Ahron Taglucop
               </div>
               <div class="h-1 w-full gradient my-0 py-0 rounded-t"></div>
               <div
-                style="
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                "
+                style="display: flex; justify-content: center; align-items: center"
                 class="mt-6"
               >
                 <img
@@ -502,16 +468,10 @@
             <div
               class="flex-1 bg-white text-gray-600 rounded-t rounded-b-none overflow-hidden shadow"
             >
-              <div class="p-8 text-1xl font-bold text-center">
-                Marc Bashley Ybiernas
-              </div>
+              <div class="p-8 text-1xl font-bold text-center">Marc Bashley Ybiernas</div>
               <div class="h-1 w-full gradient my-0 py-0 rounded-t"></div>
               <div
-                style="
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                "
+                style="display: flex; justify-content: center; align-items: center"
                 class="mt-6"
               >
                 <img
@@ -524,9 +484,7 @@
             <div
               class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6"
             >
-              <div
-                class="w-full pt-6 text-1xl text-gray-600 font-bold text-center"
-              >
+              <div class="w-full pt-6 text-1xl text-gray-600 font-bold text-center">
                 BSIT Student, Junior Developer, UI/UX Specialist
               </div>
               <div class="flex items-center justify-center">
@@ -672,15 +630,11 @@
     </svg>
     <section class="container mx-auto text-center py-6 mb-12">
       <div class="container max-w-5xl mx-auto m-8">
-        <h2
-          class="w-full my-2 text-5xl font-bold leading-tight text-center text-white"
-        >
+        <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
           Find Us
         </h2>
         <div class="w-full mb-6">
-          <div
-            class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"
-          ></div>
+          <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
         </div>
         <div class="flex flex-wrap">
           <!-- Left Column: Text Content -->
@@ -688,10 +642,9 @@
             <!-- First Row: User Interface Description -->
             <h3 class="text-3xl font-bold leading-none mb-3">What we do</h3>
             <p class="mb-2">
-              We create simple websites not just to excel but to help our
-              community and even our university, become one of the students of
-              the university that develops apps and startups to make the campus
-              work efficient and seamless.
+              We create simple websites not just to excel but to help our community and
+              even our university, become one of the students of the university that
+              develops apps and startups to make the campus work efficient and seamless.
             </p>
 
             <!-- Second Row: Additional Description -->
@@ -700,9 +653,9 @@
                 What we plan for the future
               </h3>
               <p class="mb-2">
-                To become a successful web developers as well as making
-                user-friendly websites ensuring reliability and integrity,
-                becoming one of the company's top developers and specialists.
+                To become a successful web developers as well as making user-friendly
+                websites ensuring reliability and integrity, becoming one of the company's
+                top developers and specialists.
               </p>
             </div>
           </div>
@@ -713,9 +666,7 @@
               <div class="w-full max-w-md bg-white rounded-lg shadow-md p-6">
                 <h2 class="text-2xl font-bold text-gray-800">Message Us!</h2>
                 <div class="w-full mb-4">
-                  <div
-                    class="h-1 mx-auto gradient w-4/6 my-0 py-0 rounded-t"
-                  ></div>
+                  <div class="h-1 mx-auto gradient w-4/6 my-0 py-0 rounded-t"></div>
                 </div>
 
                 <form class="flex flex-col">
@@ -729,10 +680,7 @@
                     class="bg-gray-100 mb-2 text-gray-800 border-0 rounded-md p-2 focus:bg-gray-200 focus:outline-none focus:ring-1 focus:ring-orange-600 transition ease-in-out duration-150"
                     placeholder="Enter your email address"
                   />
-                  <textarea
-                    class="textarea"
-                    placeholder="Enter a message..."
-                  ></textarea>
+                  <textarea class="textarea" placeholder="Enter a message..."></textarea>
                   <button
                     class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
                   >
@@ -993,6 +941,35 @@ li {
 .carousel::after {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
 }
+
+.textarea {
+  background-color: #f5f5f5;
+  color: #a4a4a4;
+  padding: 1em;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  outline: none;
+  font-family: "Heebo", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.4;
+  width: 100%;
+  height: 100px;
+  transition: all 0.2s;
+  resize: none;
+}
+
+.textarea:hover {
+  cursor: pointer;
+  background-color: #eeeeee;
+}
+
+.textarea:focus {
+  cursor: text;
+  color: #333333;
+  background-color: white;
+  border-color: #ff6200;
+}
 </style>
 
 <script>
@@ -1048,20 +1025,16 @@ export default {
     var navMenu = document.getElementById("nav-toggle");
 
     document
-      .querySelectorAll(
-        ".carousel__next, .carousel__prev, .carousel__navigation-button"
-      )
+      .querySelectorAll(".carousel__next, .carousel__prev, .carousel__navigation-button")
       .forEach((link) => {
         link.addEventListener("click", function (event) {
           event.preventDefault(); // Prevent the browser from scrolling to the target
           const targetId = this.getAttribute("href").substring(1); // Get the target slide id
-          document
-            .getElementById(targetId)
-            .scrollIntoView({
-              behavior: "smooth",
-              block: "nearest",
-              inline: "start",
-            });
+          document.getElementById(targetId).scrollIntoView({
+            behavior: "smooth",
+            block: "nearest",
+            inline: "start",
+          });
         });
       });
 
