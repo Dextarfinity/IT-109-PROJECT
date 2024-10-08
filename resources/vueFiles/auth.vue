@@ -1,23 +1,68 @@
 <template>
-  <div class="">
-    <img
-      class="video-background"
-      src="./images/authbg.gif"
-      alt="Background image"
-    />
+  <svg
+    viewBox="0 0 1428 174"
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+  >
+    <defs>
+      <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color: #d53369; stop-opacity: 1" />
+        <stop offset="100%" style="stop-color: #daae51; stop-opacity: 1" />
+      </linearGradient>
+    </defs>
+    <!-- Flip the SVG both vertically and horizontally by scaling x and y to -1 -->
+    <g transform="scale(-1, -1) translate(-1428, -174)">
+      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g
+          transform="translate(-2.000000, 44.000000)"
+          fill="url(#gradient)"
+          fill-rule="nonzero"
+        >
+          <path
+            d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
+            opacity="0.100000001"
+          ></path>
+          <path
+            d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+            opacity="0.100000001"
+          ></path>
+          <path
+            d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
+            id="Path-4"
+            opacity="0.200000003"
+          ></path>
+        </g>
+        <g
+          transform="translate(-4.000000, 76.000000)"
+          fill="url(#gradient)"
+          fill-rule="nonzero"
+        >
+          <path
+            d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z"
+          ></path>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <div
+    class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center bg-white authbody"
+  >
+    <!--Left Col-->
+    <div class="w-full md:w-2/5 py-6 text-center">
+      <img class="w-full md:w-5/5 z-50" src=".\images\loadingscreen.gif" />
+    </div>
+
+    <!--Right Col-->
+
     <div
       id="form-wrapper"
-      class="max-w-md w-full rounded-xl shadow-2xl overflow-hidden p-8 space-y-8 welcome_style"
+      class="formwrap max-w-md w-full rounded-xl shadow-2xl overflow-hidden p-8 space-y-8 welcome_style"
     >
-      <div
-        id="form-container"
-        :class="{ 'signup-active': currentForm === 'signup' }"
-      >
+      <div id="form-container" :class="{ 'signup-active': currentForm === 'signup' }">
         <!-- Login Form -->
         <div id="login-form" class="form-slide">
-          <h2 class="text-center text-4xl font-extrabold text-black">
-            WELCOME
-          </h2>
+          <h2 class="text-center text-4xl font-extrabold text-black">WELCOME</h2>
           <p class="text-center text-black">Sign in to your account</p>
           <form @submit.prevent="handleSubmit('login')" class="space-y-6 text-black">
             <div class="relative">
@@ -34,7 +79,8 @@
               <label
                 class="absolute left-0 -top-3.5 text-black text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-black peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-black peer-focus:text-sm"
                 for="login-email"
-              >Email address</label>
+                >Email address</label
+              >
             </div>
             <div class="relative">
               <input
@@ -50,7 +96,8 @@
               <label
                 class="absolute left-0 -top-3.5 text-black text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-black peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-black peer-focus:text-sm"
                 for="login-password"
-              >Password</label>
+                >Password</label
+              >
             </div>
             <div class="flex items-center justify-between">
               <label class="flex items-center text-sm text-black">
@@ -58,9 +105,9 @@
                   class="form-checkbox h-4 w-4 text-black bg-black border-black rounded"
                   type="checkbox"
                 />
-                <span class="ml-2">Remember me</span>
+                <span class="ml-2 buttontext">Remember me</span>
               </label>
-              <a class="text-sm text-black hover:underline" href="#"
+              <a class="text-sm text-black hover:underline buttontext" href="#"
                 >Forgot your password?</a
               >
             </div>
@@ -85,9 +132,7 @@
 
         <!-- Sign Up Form -->
         <div id="signup-form" class="form-slide">
-          <h2 class="text-center text-4xl font-extrabold text-black">
-            SIGN UP
-          </h2>
+          <h2 class="text-center text-4xl font-extrabold text-black">SIGN UP</h2>
           <p class="text-center text-black">Create your account</p>
           <form @submit.prevent="handleSubmit('signup')" class="space-y-6 text-black">
             <div class="relative">
@@ -107,7 +152,8 @@
               <label
                 class="absolute left-0 -top-3.5 text-black text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-black peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-black peer-focus:text-sm"
                 for="signup-fullname"
-              >Full Name</label>
+                >Full Name</label
+              >
             </div>
 
             <div class="relative">
@@ -124,7 +170,8 @@
               <label
                 class="absolute left-0 -top-3.5 text-black text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-black peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-black peer-focus:text-sm"
                 for="signup-email"
-              >Email address</label>
+                >Email address</label
+              >
             </div>
 
             <div class="relative">
@@ -146,7 +193,31 @@
               <label
                 class="absolute left-0 -top-3.5 text-black text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-black peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-black peer-focus:text-sm"
                 for="signup-password"
-              >Password</label>
+                >Password</label
+              >
+            </div>
+
+            <!-- Confirm Password Field -->
+            <div class="relative">
+              <input
+                v-model="confirmPassword"
+                placeholder="Confirm Password"
+                class="peer h-10 w-full border-b-2 border-black text-black bg-transparent placeholder-transparent focus:outline-none focus:border-black"
+                id="signup-confirm-password"
+                name="confirm-password"
+                type="password"
+                maxlength="50"
+                required
+                @keypress.enter="validateConfirmPassword"
+              />
+              <p id="confirmPasswordError" class="text-error">
+                {{ confirmPasswordError }}
+              </p>
+              <label
+                class="absolute left-0 -top-3.5 text-black text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-black peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-black peer-focus:text-sm"
+                for="signup-confirm-password"
+                >Confirm Password</label
+              >
             </div>
 
             <button
@@ -180,12 +251,12 @@ export default {
       fullname: "",
       email: "",
       password: "",
+      confirmPassword: "", // Add confirmPassword to the data
       loginEmail: "",
       loginPassword: "",
       nameError: "",
       passwordError: "",
-      confirmPassword: "",
-      confirmPasswordError: "",
+      confirmPasswordError: "", // Add confirmPasswordError to the data
     };
   },
   methods: {
@@ -193,7 +264,7 @@ export default {
       this.currentForm = formType;
     },
     handleSubmit(formType) {
-      if (formType === 'login') {
+      if (formType === "login") {
         if (this.loginEmail && this.loginPassword) {
           console.log("Email:", this.loginEmail);
           console.log("Password:", this.loginPassword);
@@ -201,11 +272,11 @@ export default {
         } else {
           alert("Please fill in all fields for login.");
         }
-      } else if (formType === 'signup') {
+      } else if (formType === "signup") {
         if (
           this.validateFullname() &&
           this.validatePassword() &&
-          this.validateConfirmPassword()
+          this.validateConfirmPassword() // Validate confirm password
         ) {
           console.log("Full Name:", this.fullname);
           console.log("Email:", this.email);
@@ -221,64 +292,89 @@ export default {
     },
     clearPasswordError() {
       this.passwordError = "";
+      this.confirmPasswordError = ""; // Clear confirm password error
     },
     validateFullname() {
-    try {
-      if (!this.fullname.trim()) throw new Error("Empty-name");
-      if (this.fullname.length < 10) throw new Error("short");
-      if (!/^[A-Za-z\s]+$/.test(this.fullname)) throw new Error("invalidName");
-      this.nameError = ""; // Clear error if validation passes
-      return true;
-    } catch (error) {
-      if (error.message === "Empty-name") {
-        this.nameError = "Full name is required.";
-        this.fullname = ""; // Clear the fullname field if it's wrong
-      } else if (error.message === "short") {
-        this.nameError = "Name should be at least 10 characters long.";
-        this.fullname = ""; // Clear the fullname field if it's wrong
-      } else if (error.message === "invalidName") {
-        this.nameError = "Name can only contain letters and spaces.";
-        this.fullname = ""; // Clear the fullname field if it's wrong
+      try {
+        if (!this.fullname.trim()) throw new Error("Empty-name");
+        if (this.fullname.length < 10) throw new Error("short");
+        if (!/^[A-Za-z\s]+$/.test(this.fullname)) throw new Error("invalidName");
+        this.nameError = ""; // Clear error if validation passes
+        return true;
+      } catch (error) {
+        if (error.message === "Empty-name") {
+          this.nameError = "Full name is required.";
+          this.fullname = ""; // Clear the fullname field if it's wrong
+        } else if (error.message === "short") {
+          this.nameError = "Name should be at least 10 characters long.";
+          this.fullname = ""; // Clear the fullname field if it's wrong
+        } else if (error.message === "invalidName") {
+          this.nameError = "Name can only contain letters and spaces.";
+          this.fullname = ""; // Clear the fullname field if it's wrong
+        }
+        return false;
       }
-      return false;
-    }
-  },
-  validatePassword() {
-    try {
-      if (!this.password.trim()) throw new Error("Empty-password");
-      if (this.password.length < 8) throw new Error("shortPassword");
-      if (!/[A-Z]/.test(this.password)) throw new Error("noUppercase");
-      if (!/[a-z]/.test(this.password)) throw new Error("noLowercase");
-      if (!/[0-9]/.test(this.password)) throw new Error("noDigit");
-      this.passwordError = ""; // Clear error if validation passes
-      return true;
-    } catch (error) {
-      if (error.message === "Empty-password") {
-        this.passwordError = "Password field is empty. Please enter a password.";
-        this.password = ""; // Clear the password field if it's wrong
-      } else if (error.message === "shortPassword") {
-        this.passwordError = "Password should be at least 8 characters long.";
-        this.password = ""; // Clear the password field if it's wrong
-      } else if (error.message === "noUppercase") {
-        this.passwordError = "Password must contain at least one uppercase letter.";
-        this.password = ""; // Clear the password field if it's wrong
-      } else if (error.message === "noLowercase") {
-        this.passwordError = "Password must contain at least one lowercase letter.";
-        this.password = ""; // Clear the password field if it's wrong
-      } else if (error.message === "noDigit") {
-        this.passwordError = "Password must contain at least one digit.";
-        this.password = ""; // Clear the password field if it's wrong
+    },
+    validatePassword() {
+      try {
+        if (!this.password.trim()) throw new Error("Empty-password");
+        if (this.password.length < 8) throw new Error("shortPassword");
+        if (!/[A-Z]/.test(this.password)) throw new Error("noUppercase");
+        if (!/[a-z]/.test(this.password)) throw new Error("noLowercase");
+        if (!/[0-9]/.test(this.password)) throw new Error("noDigit");
+        this.passwordError = ""; // Clear error if validation passes
+        return true;
+      } catch (error) {
+        if (error.message === "Empty-password") {
+          this.passwordError = "Password field is empty. Please enter a password.";
+          this.password = ""; // Clear the password field if it's wrong
+        } else if (error.message === "shortPassword") {
+          this.passwordError = "Password should be at least 8 characters long.";
+          this.password = ""; // Clear the password field if it's wrong
+        } else if (error.message === "noUppercase") {
+          this.passwordError = "Password must contain at least one uppercase letter.";
+          this.password = ""; // Clear the password field if it's wrong
+        } else if (error.message === "noLowercase") {
+          this.passwordError = "Password must contain at least one lowercase letter.";
+          this.password = ""; // Clear the password field if it's wrong
+        } else if (error.message === "noDigit") {
+          this.passwordError = "Password must contain at least one digit.";
+          this.password = ""; // Clear the password field if it's wrong
+        }
+        return false;
       }
-      return false;
-    }
+    },
+    validateConfirmPassword() {
+      if (this.confirmPassword !== this.password) {
+        this.confirmPasswordError = "Passwords do not match.";
+        this.confirmPassword = ""; // Clear the confirm password field if it doesn't match
+        return false;
+      }
+      this.confirmPasswordError = ""; // Clear error if validation passes
+      return true;
+    },
   },
-  }
-}
+};
 </script>
 
-
-
 <style scoped>
+.authbody {
+  margin-top: -50px;
+}
+
+@media (min-width: 1024px) and (max-width: 1480px) {
+  .authbody {
+    margin-top: -100px;
+  }
+}
+
+svg {
+  position: sticky;
+  top: 0; /* Sticks the element to the top when scrolling */
+  width: 100%; /* Adjust width as needed */
+  height: auto; /* Keeps the aspect ratio */
+  z-index: 10; /* Optional: To ensure it stays on top of other elements */
+}
 .body_sign_in {
   background-image: linear-gradient(to right, #e2dad6, #363333);
   overflow-x: hidden;
@@ -298,10 +394,8 @@ export default {
 .welcome_style {
   background-color: rgba(255, 255, 255, 0);
   background-size: 100% 300px;
-  background-position: 0% 100%;
   margin: 0 auto;
   max-width: 400px;
-  margin-top: 10%;
   backdrop-filter: blur(10px) !important;
   color: #000000 !important;
 }
@@ -309,7 +403,10 @@ export default {
 @media (max-width: 768px) {
   .welcome_style {
     max-width: 90%;
-    margin-top: 45%;
+  }
+
+  .authbody {
+    margin-top: 0px;
   }
 
   h2.text-4xl {
@@ -321,17 +418,24 @@ export default {
 @media (max-width: 480px) {
   .welcome_style {
     max-width: 95%;
-    margin-top: 45%;
   }
 
   h2.text-4xl {
     font-size: 1.7rem;
     /* Enlarge "WELCOME" text for mobile screens */
   }
-
+  .authbody {
+    margin-top: 0px;
+  }
   p.text-center.text-black {
     font-size: 1.2rem;
     /* Slightly adjust paragraph size */
+  }
+  .buttontext {
+    font-size: 0.7rem;
+  }
+  .authbody {
+    margin-top: -100px;
   }
 }
 
@@ -378,5 +482,8 @@ export default {
 /* Slide to the sign-up form */
 #form-container.signup-active {
   transform: translateX(-50%);
+}
+.gradient {
+  background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
 }
 </style>
