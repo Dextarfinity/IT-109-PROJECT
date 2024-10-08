@@ -1,14 +1,26 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Body from '../vueFiles/body.vue';
-import Profile from '../vueFiles/views/UserProfile.vue'
-import Dashboard from '../vueFiles/views/DashBoard.vue'
+import Home from '../vueFiles/views/HomeSection.vue'
+import Faq from '../vueFiles/views/FAQsSection.vue'
+import Setting from '../vueFiles/views/SettingsSection.vue'
+import Profile from '../vueFiles/views/ProfileSection.vue'
 
 
 const routes = [
   {
     path: '/main',
-    name: 'Dashboard',
-    component: Dashboard
+    name: 'Home',
+    component: Home
+  },
+  {
+    path: '/faq',
+    name: 'Faq',
+    component: Faq
+  },
+  {
+    path: '/setting',
+    name: 'Setting',
+    component: Setting
   },
   {
     path: '/profile',
