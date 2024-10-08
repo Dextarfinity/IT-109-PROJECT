@@ -1,18 +1,25 @@
 <template>
-  <section id="settings" class="h-screen py-16 bg-gray-300 flex items-center">
+  <section id="settings" class="h-screen py-16 bg-gray-100 flex items-center">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-4xl font-extrabold text-center mb-12 animate-fade-in-down">
+      <h2
+        class="text-4xl font-extrabold text-center mb-12 text-black animate-fade-in-down"
+      >
         Settings
       </h2>
-      <div class="bg-white rounded-lg shadow-md p-6">
+      <div class="bg-white rounded-lg shadow-md p-6 animate-fade-in">
         <div class="space-y-4">
-          <h3 class="text-2xl font-semibold">Notification Settings</h3>
-          <label class="inline-flex items-center">
+          <!-- Notification Settings -->
+          <h3 class="text-2xl font-semibold animate-fade-in-late">
+            Notification Settings
+          </h3>
+          <label class="inline-flex items-center animate-fade-in-late">
             <input type="checkbox" class="form-checkbox h-5 w-5 text-green-600" />
             <span class="ml-2 text-gray-700">Enable Notifications</span>
           </label>
-          <h3 class="text-2xl font-semibold">Privacy Settings</h3>
-          <label class="inline-flex items-center">
+
+          <!-- Privacy Settings -->
+          <h3 class="text-2xl font-semibold animate-fade-in-later">Privacy Settings</h3>
+          <label class="inline-flex items-center animate-fade-in-later">
             <input type="checkbox" class="form-checkbox h-5 w-5 text-green-600" />
             <span class="ml-2 text-gray-700">Share location with drivers</span>
           </label>
@@ -21,3 +28,45 @@
     </div>
   </section>
 </template>
+
+<script setup></script>
+
+<style scoped>
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animations */
+.animate-fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.animate-fade-in-down {
+  animation: fadeInDown 0.8s ease-in-out;
+}
+
+.animate-fade-in-late {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.animate-fade-in-later {
+  animation: fadeIn 1.5s ease-in-out;
+}
+</style>

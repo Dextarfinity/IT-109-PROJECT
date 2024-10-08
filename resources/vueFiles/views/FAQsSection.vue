@@ -1,10 +1,15 @@
 <template>
-  <section id="faqs" class="h-screen py-16 bg-gray-100 flex items-center">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
-      <h2 class="text-4xl font-extrabold text-center mb-12 animate-fade-in-down">
+  <section id="faqs" class="h-screen py-16 bg-white flex items-center">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 mt-24 mb-24">
+      <!-- Title -->
+      <h2
+        class="text-4xl font-extrabold text-center pt-24 mt-24 animate-fade-in-down text-black"
+      >
         Frequently Asked Questions
       </h2>
-      <div class="space-y-8">
+
+      <!-- FAQs Container -->
+      <div class="space-y-8 mb-24">
         <div
           v-for="(faq, index) in faqs"
           :key="index"
@@ -38,3 +43,35 @@ const faqs = [
   },
 ];
 </script>
+
+<style scoped>
+/* Fade-in and Slide animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animations */
+.animate-fade-in {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.animate-fade-in-down {
+  animation: fadeInDown 1s ease-in-out forwards;
+}
+</style>
