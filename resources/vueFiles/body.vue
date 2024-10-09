@@ -61,7 +61,8 @@ import "boxicons/css/boxicons.min.css";
 .font-space-mono {
   font-family: "Space Mono", monospace;
 }
-html {
+html,
+body {
   overflow-x: hidden;
 }
 .footer-menu {
@@ -89,7 +90,7 @@ html {
   color: #fff; /* White color for dark mode */
   background: none;
   border: none;
-  transition: transform 0.3s ease, color 0.3s ease; /* Transition for smooth effect */
+  transition: transform 0.5s ease, color 0.5s ease; /* Transition for smooth effect */
 }
 
 .footer-button i {
@@ -107,10 +108,27 @@ html {
 .footer-button:hover,
 .footer-button:focus {
   color: #4fd1c5; /* Change text color on hover/focus */
+  transform: scale(1.2) translateY(-5px); /* Scale and slightly move up */
+  background-color: rgb(88, 78, 78);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  width: 50px;
+  height: 50px;
+  z-index: 2;
+}
+
+.footer-button i:hover,
+.footer-button i:focus {
+  color: #4fd1c5; /* Change text color on hover/focus */
   transform: scale(1.1); /* Slightly increase size */
 }
 
 .footer-button:focus {
+  outline: none; /* Remove default outline for focus */
+  box-shadow: 0 0 0 3px rgba(79, 209, 197, 0.5); /* Add a subtle focus ring */
+}
+
+.footer-button i:focus {
   outline: none; /* Remove default outline for focus */
   box-shadow: 0 0 0 3px rgba(79, 209, 197, 0.5); /* Add a subtle focus ring */
 }

@@ -486,4 +486,9 @@ svg {
 .gradient {
   background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
 }
+
+html,
+body {
+  overflow-x: hidden;
+}
 </style>
