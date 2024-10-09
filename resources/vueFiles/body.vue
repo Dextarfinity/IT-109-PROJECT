@@ -1,54 +1,55 @@
 <template>
-  <div class="min-h-screen bg-gray-100 dark:bg-gray-900 font-space-mono">
+  <div class="min-h-screen bg-gray-100 gradient font-space-mono">
     <!-- Navbar -->
-    <nav class="bg-black shadow-lg fixed w-full z-10">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between h-16">
-          <div class="flex-shrink-0 flex items-center">
-            <!-- <img class="h-8 w-auto" src="/placeholder.svg?height=32&width=32" alt="Hatid Kita Logo" /> -->
-          </div>
-          <div class="hidden space-x-8 mt-8 lg:flex xl:flex">
-            <router-link to="/main"><button>Home</button></router-link>
-            <router-link to="/faq"><button>FAQs</button></router-link>
-            <router-link to="/setting"><button>Setting</button></router-link>
-            <router-link to="/profile"><button>Profile</button></router-link>
-          </div>
+    <nav class="bg-transparent shadow-lg fixed w-full z-10 hidden lg:flex xl:flex">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex w-full justify-between">
+        <div class="flex-shrink-0 flex items-center">
+          <!-- Logo or placeholder -->
+        </div>
+        <div class="space-x-8 mt-8 ml-auto flex">
+          <router-link to="/main"><button>Home</button></router-link>
+          <router-link to="/faq"><button>FAQs</button></router-link>
+          <router-link to="/setting"><button>Setting</button></router-link>
+          <router-link to="/profile"><button>Profile</button></router-link>
         </div>
       </div>
     </nav>
+
     <router-view></router-view>
   </div>
-  <footer class="footer-menu">
-    <div class="footer-menu flex lg:hidden xl:hidden">
-      <router-link to="/main">
-        <button class="footer-button">
-          <i class="bx bx-home"></i>
-          <span>Home</span>
-        </button>
-      </router-link>
+  <div class="flex lg:hidden xl:hidden">
+    <footer class="footer-menu" style="z-index: 1">
+      <div class="flex lg:hidden xl:hidden space-x-14">
+        <router-link to="/main">
+          <button class="footer-button">
+            <i class="bx bx-home"></i>
+            <span>Home</span>
+          </button>
+        </router-link>
 
-      <router-link to="/faq">
-        <button class="footer-button">
-          <i class="bx bx-question-mark"></i>
-          <span>FAQs</span>
-        </button>
-      </router-link>
+        <router-link to="/faq">
+          <button class="footer-button">
+            <i class="bx bx-question-mark"></i>
+            <span>FAQs</span>
+          </button>
+        </router-link>
 
-      <router-link to="/setting">
-        <button class="footer-button">
-          <i class="bx bx-cog"></i>
-          <span>Setting</span>
-        </button>
-      </router-link>
+        <router-link to="/setting">
+          <button class="footer-button">
+            <i class="bx bx-cog"></i>
+            <span>Setting</span>
+          </button>
+        </router-link>
 
-      <router-link to="/profile">
-        <button class="footer-button">
-          <i class="bx bx-user"></i>
-          <span>Profile</span>
-        </button>
-      </router-link>
-    </div>
-  </footer>
+        <router-link to="/profile">
+          <button class="footer-button">
+            <i class="bx bx-user"></i>
+            <span>Profile</span>
+          </button>
+        </router-link>
+      </div>
+    </footer>
+  </div>
 </template>
 
 <script>
@@ -57,9 +58,11 @@ import "boxicons/css/boxicons.min.css";
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
-
 .font-space-mono {
   font-family: "Space Mono", monospace;
+}
+html {
+  overflow-x: hidden;
 }
 .footer-menu {
   position: fixed;
@@ -68,10 +71,17 @@ import "boxicons/css/boxicons.min.css";
   right: 0;
   display: flex;
   justify-content: space-around;
-  background-color: #1a202c; /* Dark background for dark mode */
   padding: 10px 0;
+  background-color: #0f172a; /* Slate 900 */
+  backdrop-filter: blur(10px); /* Adjust the blur amount as needed */
+  border-top: 1px solid rgba(255, 255, 255, 0.3); /* Optional: Add a subtle border */
+  z-index: 10; /* Ensure it stays on top of other elements */
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  transition: background-color 0.3s ease; /* Smooth background transition */
 }
 
+/* Styles for the footer buttons */
 .footer-button {
   display: flex;
   flex-direction: column;
@@ -79,6 +89,7 @@ import "boxicons/css/boxicons.min.css";
   color: #fff; /* White color for dark mode */
   background: none;
   border: none;
+  transition: transform 0.3s ease, color 0.3s ease; /* Transition for smooth effect */
 }
 
 .footer-button i {
@@ -86,8 +97,50 @@ import "boxicons/css/boxicons.min.css";
   color: white;
 }
 
+/* Text styling */
 .footer-button span {
   font-size: 12px;
   margin-top: 4px;
+}
+
+/* Hover and focus effects */
+.footer-button:hover,
+.footer-button:focus {
+  color: #4fd1c5; /* Change text color on hover/focus */
+  transform: scale(1.1); /* Slightly increase size */
+}
+
+.footer-button:focus {
+  outline: none; /* Remove default outline for focus */
+  box-shadow: 0 0 0 3px rgba(79, 209, 197, 0.5); /* Add a subtle focus ring */
+}
+
+.gradient {
+  background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+}
+
+/* Webkit Browsers */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px; /* for horizontal scrollbars */
+}
+
+.textsy textarea {
+  resize: none;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 50px; /* Circular border */
+  border: 3px solid #f1f1f1; /* Adds space around thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
 }
 </style>

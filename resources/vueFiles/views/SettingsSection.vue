@@ -1,13 +1,18 @@
 <template>
-  <section id="settings" class="h-screen py-16 bg-gray-100 flex items-center">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+  <section
+    id="settings"
+    class="h-screen bg-cover bg-center relative flex items-center justify-center"
+    :style="{ backgroundImage: 'url(/placeholder.svg?height=1080&width=1920)' }"
+  >
+    <div class="absolute inset-0 bg-black bg-opacity-50" style="z-index: 1"></div>
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8" style="z-index: 1">
       <h2
-        class="text-4xl font-extrabold text-center mb-12 text-black animate-fade-in-down"
+        class="text-4xl font-extrabold text-center mb-12 text-white animate-fade-in-down"
       >
         Settings
       </h2>
       <div class="bg-white rounded-lg shadow-md p-6 animate-fade-in">
-        <div class="space-y-4">
+        <div class="space-y-2">
           <!-- Notification Settings -->
           <h3 class="text-2xl font-semibold animate-fade-in-late">
             Notification Settings

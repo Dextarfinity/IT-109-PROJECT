@@ -1,15 +1,20 @@
 <template>
-  <section id="faqs" class="h-screen py-16 bg-white flex items-center">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 mt-24 mb-24">
+  <section
+    id="faqs"
+    class="h-screen bg-cover bg-center relative flex items-center justify-center"
+    :style="{ backgroundImage: 'url(/placeholder.svg?height=1080&width=1920)' }"
+  >
+    <div class="absolute inset-0 bg-black bg-opacity-50" style="height: 120vh"></div>
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 mt-10 mb-10">
       <!-- Title -->
       <h2
-        class="text-4xl font-extrabold text-center pt-24 mt-24 animate-fade-in-down text-black"
+        class="text-4xl font-extrabold text-center pt-24 mt-8 mb-8 animate-fade-in-down text-white"
       >
         Frequently Asked Questions
       </h2>
 
       <!-- FAQs Container -->
-      <div class="space-y-8 mb-24">
+      <div class="space-y-6">
         <div
           v-for="(faq, index) in faqs"
           :key="index"

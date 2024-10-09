@@ -11,19 +11,19 @@
     <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <!-- Title -->
       <h1
-        class="text-5xl sm:text-6xl font-extrabold leading-tight mb-4 animate-fade-in-down text-white"
+        class="pt-10 text-4xl sm:text-6xl font-extrabold leading-tight mb-4 animate-fade-in-down text-white"
       >
         HATID KITA
       </h1>
 
       <!-- Subtitle -->
-      <h3 class="text-2xl sm:text-3xl font-bold mb-8 animate-fade-in-up text-white">
+      <h3 class="text-2xl sm:text-3xl font-bold mb-6 animate-fade-in-up text-white">
         A SYSTEM PROTOTYPE
       </h3>
 
       <!-- Terminal logs -->
       <div
-        class="bg-black bg-opacity-75 text-green-400 p-4 rounded-lg shadow-lg font-mono text-sm h-64 w-full max-w-2xl mx-auto overflow-y-auto mb-6 text-left animate-fade-in"
+        class="bg-black bg-opacity-75 text-green-400 p-4 rounded-lg shadow-lg font-mono text-sm h-64 w-full max-w-2xl mx-auto overflow-y-auto mb-4 text-left animate-fade-in"
       >
         <div v-for="(log, index) in terminalLogs" :key="index">
           <span class="text-green-400">$</span> {{ log }}
